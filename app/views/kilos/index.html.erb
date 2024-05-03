@@ -1,0 +1,10 @@
+<h1>KiloInfinite</h1>
+<p>Due to change</p>
+
+<ul>
+  <% @kilos.each do |kilo| %>
+    <li>
+      <%= link_to kilo.title, kilo %>
+    </li>
+  <% end %>
+</ul>
