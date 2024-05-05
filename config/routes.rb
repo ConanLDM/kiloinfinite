@@ -11,4 +11,11 @@ Rails.application.routes.draw do
   get "/kilos", to: "kilos#index"
 
   resources :kilos
+
+
+  #Background jobs routes
+  require "sidekiq/web"
+  authenticate :user, ->(user) { user.admin? } do
+    mount Sidekiq::Web => '/sidekiq'
+  end
 end
