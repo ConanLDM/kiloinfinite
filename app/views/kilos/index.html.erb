@@ -1,9 +1,15 @@
-<p>Due to change</p>
+<p>Kilo Records</p>
 
-<ul>
-  <% @kilos.each do |kilo| %>
-    <li>
-      <%= link_to kilo %>
-    </li>
+<div class="container">
+  <%= turbo_frame_tag "kilos" do %>
+    <ul>
+      <% @kilos.each do |kilo| %>
+        <li>
+          <%= link_to kilo.title, kilo_path(kilo), data: { turbo_frame: "kilo_#{kilo.id}" } %>
+        </li>
+      <% end %>
+    </ul>
   <% end %>
-</ul>
+
+  <%= render "kilos/form" %>
+</div>
