@@ -1,8 +1,10 @@
 class KilosController < ApplicationController
-  skip_before_action :authenticate_user!, only: :index
+  # Will specify CRUD actions later, for now adding to thiis will affect Turbo
+  skip_before_action :authenticate_user!
 
   def index
     @kilos = Kilo.all
+    @kilo = Kilo.new
   end
 
   def show
@@ -17,14 +19,25 @@ class KilosController < ApplicationController
     @kilo = Kilo.new(kilo_params)
 
     if @kilo.save
-      redirect_to @kilo
+      respond_to do |format|
+        format.html { redirect_to @kilo }
+        format.turbo_stream { redirect_to @kilo, status: :see_other }
+      end
     else
-      render :new, status: :unprocessable_entity
+      respond_to do |format|
+        format.html { render :new, status: :unprocessable_entity }
+        format.turbo_stream { render :new, status: :unprocessable_entity }
+      end
     end
   end
 
+  def destroy
+    @kilo.destroy
+  end
+
   private
-    def kilo_params
-      params.require(:kilo).permit(:title, :body)
-    end
+
+  def kilo_params
+    params.require(:kilo).permit(:title, :body)
+  end
 end

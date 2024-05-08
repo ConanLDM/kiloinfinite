@@ -1,3 +1,6 @@
-<h1><%= @kilo.title %></h1>
-
-<p><%= @kilo.body %></p>
+<%= turbo_frame_tag "kilos" do %>
+  <%= turbo_stream_from dom_id(@kilo) %>
+  <h1><%= @kilo.title %></h1>
+  <p><%= @kilo.body %></p>
+  <%= link_to 'Back', kilos_path %>
+<% end %>
