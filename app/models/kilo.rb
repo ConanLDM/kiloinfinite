@@ -1,6 +1,8 @@
 class Kilo < ApplicationRecord
   validates :title, presence: true
-  validates :body, presence: true, length: { minimum: 10, maximum: 50 }
+  validates :body, presence: true, length: { minimum: 2, maximum: 50 }
 
-  def to_s = title
+  def to_s
+    title
+  end
 end

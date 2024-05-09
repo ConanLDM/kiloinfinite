@@ -1,0 +1,22 @@
+default_count: 5
+models:
+  kilo:
+    attributes:
+      title: '{{Faker::Lorem.word}}'
+      body: '{{Faker::Lorem.word}}'
+    disabled_fields: []
+    associations:
+      belongs_to:
+      has_one:
+      has_many:
+  user:
+    count: 3
+    attributes:
+      email: '{{Faker::Lorem.unique.word}}@example.com'
+      encrypted_password: 'qui'
+      password: 'seedie'
+    disabled_fields: ["reset_password_token", "reset_password_sent_at", "remember_created_at"]
+    associations:
+      belongs_to:
+      has_one:
+      has_many:
