@@ -60,6 +60,9 @@ gem 'dartsass-sprockets'
 # Form handler
 gem 'simple_form'
 
+# Seeding
+gem 'seedie'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
