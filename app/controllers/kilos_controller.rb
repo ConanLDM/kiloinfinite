@@ -1,5 +1,5 @@
 class KilosController < ApplicationController
-  # Will specify CRUD actions later, for now adding to thiis will affect Turbo
+  # Will specify CRUD actions later, for now adding to this line below will affect Turbo
   skip_before_action :authenticate_user!
 
   def index
@@ -38,6 +38,6 @@ class KilosController < ApplicationController
   private
 
   def kilo_params
-    params.require(:kilo).permit(:title, :body)
+    params.require(:kilo).permit(:title, :body, :weight)
   end
 end

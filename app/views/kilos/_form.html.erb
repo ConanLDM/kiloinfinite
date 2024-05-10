@@ -1,5 +1,6 @@
 <%= simple_form_for @kilo do |f| %>
   <%= f.input :title %>
   <%= f.input :body %>
+  <%= f.input :weight, step: 0.01 %>
   <%= f.button :submit %>
 <% end %>

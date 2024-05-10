@@ -2,5 +2,6 @@
   <%= turbo_stream_from dom_id(@kilo) %>
   <h1><%= @kilo.title %></h1>
   <p><%= @kilo.body %></p>
+  <p>Weight: <%= number_with_precision(@kilo.weight, precision: 2) %> kg</p>
   <%= link_to 'Back', kilos_path %>
 <% end %>
