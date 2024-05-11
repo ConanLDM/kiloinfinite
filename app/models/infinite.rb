@@ -1,0 +1,2 @@
+class Infinite < ApplicationRecord
+end
