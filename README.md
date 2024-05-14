@@ -8,3 +8,5 @@ New Infinite model is based around model fields of count and price.
 
 ### The below has been achieved
 For now, the application intends to use Sidekiq and Hotwire(focus is Turbo not Stimulus with this application) as two of its main technologies.
+
+Infinite MVC setup together with seeds setup to generate Infinite records.
