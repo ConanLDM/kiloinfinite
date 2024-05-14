@@ -7,3 +7,13 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+# Infinite Seeds
+10.times do
+  Infinite.create!(name: 'Milk', count: 10, price: 50.0)
+end
+
+10.times do
+  Infinite.create!(name: 'Wine', count: 5, price: 120.0)
+end
