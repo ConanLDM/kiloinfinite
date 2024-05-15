@@ -2,6 +2,7 @@ class InfinitesController < ApplicationController
 
   def index
     @infinites = Infinite.all
+    @infinite = Infinite.new
   end
 
   def show
@@ -13,7 +14,13 @@ class InfinitesController < ApplicationController
   end
 
   def create
-    @infinite = Infinite.new
+    @infinite = Infinite.new(infinite_params)
   end
 
+
+  private
+
+  def infinite_params
+    params.require(:infinite).permit(:name, :count, :price)
+  end
 end
