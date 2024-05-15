@@ -1,0 +1,6 @@
+<%= simple_form_for @infinite do |f| %>
+  <%= f.input :name %>
+  <%= f.input :count %>
+  <%= f.input :price, step: 0.01 %>
+  <%= f.button :submit %>
+<% end %>

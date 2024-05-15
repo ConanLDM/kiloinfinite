@@ -2,3 +2,6 @@
 <% @infinites.each do |infinite| %>
   <%= link_to infinite.name, infinite_path(infinite), data: { turbo_frame: "infinite_#{infinite.id}" } %>
 <% end %>
+
+
+  <%= render "infinites/form" %>
