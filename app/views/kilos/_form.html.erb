@@ -1,6 +1,18 @@
 <%= simple_form_for @kilo do |f| %>
-  <%= f.input :title %>
-  <%= f.input :body %>
-  <%= f.input :weight, step: 0.01 %>
-  <%= f.button :submit %>
+  <div class="form">
+
+    <div class="mb-3">
+      <%= f.input :title %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.input :body %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.input :weight, step: 0.01 %>
+    </div>
+
+    <input class="btn btn-primary" type="submit" value="Submit"<%= f.button :submit %>
+  </div>
 <% end %>
