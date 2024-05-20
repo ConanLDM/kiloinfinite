@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<p>Kilo Records</p>
+  <h1>Kilo Records</h1>
 
   <%= turbo_frame_tag "kilos" do %>
     <ul>
@@ -11,12 +11,8 @@
     </ul>
   <% end %>
 
-  <button type="button"
-        class="btn btn-lg btn-danger"
-        data-bs-toggle="popover"
-        title="This is..."
-        data-bs-content="the home page">
-        Click to toggle popover
+  <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Home Page" data-bs-content="Welcome to the home page.">
+    Click to open...
   </button>
 
   <%= render "kilos/form" %>
@@ -29,15 +25,16 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <h2 class="fs-5">This is the Kilos side of the application...</h2>
+          <h2 class="fs-5">Explore Kilos</h2>
           <p>This <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</button> triggers a popover on click.</p>
           <hr>
-          <h2 class="fs-5">Kilos modal with a popover in the modal above</h2>
+          <h2 class="fs-5">Popover available in the button above</h2>
         </div>
       </div>
     </div>
   </div>
 
-
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Kilos...</button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">
+    View a random Kilo
+  </button>
 </div>
