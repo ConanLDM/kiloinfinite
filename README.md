@@ -22,3 +22,10 @@ Further models and controllers, as not looking to create extensively comprehensi
 Vast extension of content in the application.
 
 Addition of further seeds.
+
+#### Image Links
+Kilo:
+https://www.pexels.com/photo/purple-all-cast-dumbbells-on-marble-surface-4397833/
+
+Infinite:
+https://www.pexels.com/photo/starry-sky-in-dark-night-4983247/
