@@ -69,6 +69,9 @@ gem 'pg_search'
 # Authorisation gem
 gem "action_policy"
 
+# Ruby GraphQL implementation
+gem 'graphql'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
@@ -90,3 +93,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+gem "graphiql-rails", group: :development
