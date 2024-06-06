@@ -84,7 +84,12 @@ GEM
     bootstrap (5.3.3)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 2.11.8, < 3)
+    brakeman (6.1.2)
+      racc
     builder (3.2.4)
+    bundler-audit (0.9.1)
+      bundler (>= 1.2.0, < 3)
+      thor (~> 1.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -343,6 +348,8 @@ DEPENDENCIES
   action_policy
   bootsnap
   bootstrap (~> 5.3.3)
+  brakeman
+  bundler-audit
   capybara
   dartsass-sprockets
   debug
