@@ -13,6 +13,14 @@
       <%= f.input :price, step: 0.01 %>
     </div>
 
+    <div class="mb-3">
+      <%= f.input :image, as: :file %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.input :description %>
+    </div>
+
     <%= f.button :submit %>
   </div>
 <% end %>

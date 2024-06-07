@@ -1,0 +1,7 @@
+<%= turbo_frame_tag dom_id(infinite) do %>
+  <%= link_to infinite_path(infinite), data: { turbo_frame: "infinite_#{infinite.id}" } do %>
+    <h2><%= infinite.name %></h2>
+    <p>Price: <%= number_to_currency(infinite.price) %></p>
+    <p>Quantity: <%= infinite.count %></p>
+  <% end %>
+<% end %>
