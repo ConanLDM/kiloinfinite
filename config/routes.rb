@@ -17,8 +17,7 @@ Rails.application.routes.draw do
 
   resources :kilos
 
-  resources :infinites, only: [:index, :show]
-
+  resources :infinites
 
   #Background jobs routes
   require "sidekiq/web"

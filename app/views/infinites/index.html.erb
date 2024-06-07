@@ -1,7 +1,11 @@
 <h1>Infinite Products</h1>
-<% @infinites.each do |infinite| %>
-  <%= link_to infinite.name, infinite_path(infinite), data: { turbo_frame: "infinite_#{infinite.id}" } %>
-<% end %>
 
+<%= turbo_stream_from :infinites %>
 
-  <%= render "infinites/form" %>
+<div class="infinite-index-container">
+  <% @infinites.each do |infinite| %>
+    <%= render partial: 'infinite', locals: { infinite: infinite } %>
+  <% end %>
+</div>
+
+<%= turbo_frame_tag "new_infinite", src: new_infinite_path %>
