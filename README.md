@@ -1,19 +1,24 @@
 # README
-This application has an emphasis on weight (hence the word kilo), however, I am not looking to make it the sole focus of the application.
-
-Weight has been recently implemented into the Kilo model and Kilo records.
-
-New Infinite model is based around model fields of count and price.
+This application has an emphasis on weight (hence the word kilo), however, this is not the sole focus of the application.
 
 ### The below has been achieved
 For now, the application intends to use Sidekiq and Hotwire(focus is Turbo not Stimulus with this application) as two of its main technologies.
 
-Infinite MVC setup together with seeds setup to generate Infinite records.
+Infinite MVC setup together with seeds setup to generate Infinite records (The Infinite MVC has now been expanded further).
 
 Bootstrap flavoured Popover, Modal and a Popover inside a Modal.
 
+Expansion of assets including images and videos, users will be able to upload these via Active Storage.
+
+#### Recently Added
+
+RSpec and FactoryBot.
+
+Gems such as Action Policy for authorisation and Bundler Audit along with Brakeman for protecting against application vulnerabilities.
+
+Upgraded to Rails 7.2 Beta and latest Ruby version (3.3.2).
+
 #### Arriving Soon
-Expansion of assets including images and videos, likely users will be able to upload these via Active Storage.
 
 Inclusion of deletion CRUD action in both Kilo and Infinite sectionss of the application.
 
