@@ -6,6 +6,8 @@
   <% @infinites.each do |infinite| %>
     <%= render partial: 'infinite', locals: { infinite: infinite } %>
   <% end %>
+
+    <%= paginate @infinites %>
 </div>
 
 <%= turbo_frame_tag "new_infinite", src: new_infinite_path %>
