@@ -3,6 +3,7 @@ class InfinitesController < ApplicationController
   def index
     @infinites = Infinite.all
     @infinite = Infinite.new
+    @infinites = Infinite.page(params[:page]).per(10)
   end
 
   def show
