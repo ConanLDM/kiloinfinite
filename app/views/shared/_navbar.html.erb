@@ -16,7 +16,7 @@
           <li class="nav-item">
             <%= link_to "Infinites", infinites_path, class: "nav-link" %>
           </li>
-          
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               TBD
@@ -26,6 +26,7 @@
               <li><a class="dropdown-item" href="#">TBD</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item"<%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a></li>
             </ul>
           </li>
         </ul>
