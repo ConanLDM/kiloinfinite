@@ -16,7 +16,7 @@ RSpec and FactoryBot.
 
 Gems such as Action Policy for authorisation and Bundler Audit along with Brakeman for protecting against application vulnerabilities.
 
-Upgraded to Rails 7.2 Beta and latest Ruby version (3.3.2).
+Upgraded to Rails 7.2 Beta and latest Ruby version (3.3.3).
 
 #### Arriving Soon
 
