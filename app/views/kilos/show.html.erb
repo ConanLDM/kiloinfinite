@@ -5,3 +5,8 @@
   <p>Weight: <%= number_with_precision(@kilo.weight, precision: 2) %> kg</p>
   <%= link_to 'Back', kilos_path %>
 <% end %>
+
+<%= link_to "Delete",
+  kilo_path(@kilo),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>

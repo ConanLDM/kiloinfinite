@@ -32,6 +32,12 @@ class InfinitesController < ApplicationController
     end
   end
 
+  def destroy
+    @infinite = Infinite.find(params[:id])
+    @infinite.destroy
+    redirect_to infinites_path, status: :see_other
+  end
+
 
   private
 

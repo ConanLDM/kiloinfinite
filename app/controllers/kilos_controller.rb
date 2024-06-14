@@ -32,7 +32,9 @@ class KilosController < ApplicationController
   end
 
   def destroy
+    @kilo = Kilo.find(params[:id])
     @kilo.destroy
+    redirect_to kilos_path, status: :see_other
   end
 
   private
