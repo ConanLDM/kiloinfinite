@@ -18,9 +18,9 @@ Gems such as Action Policy for authorisation and Bundler Audit along with Brakem
 
 Upgraded to Rails 7.2 Beta and latest Ruby version (3.3.3).
 
-#### Arriving Soon
+Inclusion of deletion CRUD action in both Kilo and Infinite sections of the application.
 
-Inclusion of deletion CRUD action in both Kilo and Infinite sectionss of the application.
+#### Arriving Soon
 
 Further models and controllers, as not looking to create extensively comprehensive versions of them.
 

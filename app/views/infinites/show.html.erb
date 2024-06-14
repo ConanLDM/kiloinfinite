@@ -5,3 +5,8 @@
 <%= @infinite.price %>
 
 <%= @infinite.count %>
+
+<%= link_to "Delete",
+  infinite_path(@infinite),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
