@@ -1,0 +1,2 @@
+class EnigmasController < ApplicationController
+end
