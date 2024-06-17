@@ -10,6 +10,17 @@
     </div>
 
     <div class="form-field">
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, class: "input-field" %>
+    </div>
+
+    <div class="form-field">
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, class: "input-field" %>
+    </div>
+
+
+    <div class="form-field">
       <%= f.label :password %>
       <% if @minimum_password_length %>
         <em class="password-hint">(<%= @minimum_password_length %> characters minimum)</em>
