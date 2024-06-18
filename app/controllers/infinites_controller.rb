@@ -1,13 +1,16 @@
 class InfinitesController < ApplicationController
+  include Trackable
 
   def index
     @infinites = Infinite.all
     @infinite = Infinite.new
     @infinites = Infinite.page(params[:page]).per(10)
+    @visits = Ahoy::Visit.includes(:events).all
   end
 
   def show
     @infinite = Infinite.find(params[:id])
+    track "Viewed Infinite", name: @infinite.name
   end
 
   def new
